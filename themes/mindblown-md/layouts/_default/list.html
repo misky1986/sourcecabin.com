@@ -1,7 +1,11 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
-    {{- range first 10 .Data.Pages }}
-        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-    {{- end }}
+{{ partial "navigation.html" . }}
+
+{{ partial "drawer.html" . }}
+
+{{- range first 10 .Data.Pages }}
+    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+{{- end }}
 
 {{ partial "footer.html" . }}
