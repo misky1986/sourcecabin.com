@@ -2,7 +2,6 @@
 
 {{ partial "navigation.html" . }}
 
-{{ partial "drawer.html" . }}
 
 {{- range first 10 .Data.Pages }}
     <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>

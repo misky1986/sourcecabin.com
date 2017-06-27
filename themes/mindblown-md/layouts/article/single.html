@@ -1,9 +1,29 @@
 {{ partial "head.html" . }}
+
 {{ partial "navigation.html" . }}
-{{ partial "drawer.html" . }}
 
-<h1>{{ .Title }}</h1>
-<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
-{{ .Content }}
+<main class="mdl-layour__content">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col">
+            <h2>Posts</h2>
+                {{- range first 10 .Data.Pages }}
+                    {{- if eq .Type "post"}}
+                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    {{- end -}}
+                {{- end }}
+        </div>
+        <div class="mdl-cell mdl-cell--8-col">
+            <article>
+                <h1>{{ .Title }}</h1>
+                <h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+                {{ .Content }}
+                adadasd
+            </article>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col">TAGS</div>
 
-{{ partial "footer.html" . }}
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
+    </div>
+</main>

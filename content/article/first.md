@@ -1,7 +1,6 @@
 +++
 date = "2017-06-14T22:12:06+02:00"
 title = "First"
-
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

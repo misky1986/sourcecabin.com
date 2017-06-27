@@ -1,56 +1,29 @@
 {{ partial "head.html" . }}
 
 {{ partial "navigation.html" . }}
-{{ partial "drawer.html" . }}
 
-    <main class="mdl-layour__content">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col">
-                <h2>Posts</h2>
-                {{- range first 10 .Data.Pages }}
-                    {{- if eq .Type "article"}}
-                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    {{- end -}}
-                {{- end }}
-            </div>
-            <div class="mdl-cell mdl-cell--8-col">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae dolor dolore eos est explicabo facere illum labore laudantium, optio praesentium quam, quasi quos sequi totam. Eum ipsa ratione reprehenderit.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci consectetur cumque enim iusto nulla voluptatum? Iusto magni modi veniam! Cumque cupiditate harum laborum magnam minus quaerat, qui reiciendis!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi corporis dolorum earum error expedita facere harum, illum maxime molestiae numquam porro quam quis quos repudiandae, rerum sit temporibus voluptatem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorem dolorum exercitationem fuga illo inventore ipsam iusto modi non numquam quos sed, voluptates. Consectetur dolor fugit iure sint voluptatibus. Ab.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error, hic molestiae nulla officia rerum sequi unde. Doloribus ipsa laudantium libero suscipit ullam velit. Accusantium cum eius nemo perferendis quo!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam dicta dolores ex fuga quae, quod tempora tempore. Accusantium atque consequatur ea fuga inventore laborum nostrum omnis, qui quibusdam sequi.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi consequatur distinctio dolorem et laborum minima nihil numquam odio officia perferendis porro reprehenderit saepe sapiente, sint, tenetur vitae voluptates, voluptatibus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur beatae libero minima necessitatibus quas, temporibus. Accusamus accusantium ad amet eveniet, exercitationem explicabo facilis fugit nam officia, reprehenderit sunt vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut corporis, doloribus eaque, error exercitationem in ipsa laudantium libero necessitatibus neque nesciunt officia, officiis quibusdam repudiandae tempora temporibus vel.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis consequatur corporis cupiditate debitis eligendi eveniet ex facere fugiat magni porro quae recusandae reprehenderit sit soluta, suscipit ut veritatis voluptatem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut commodi consequuntur culpa cum dicta ducimus eligendi eveniet inventore laboriosam minima nobis non numquam quisquam rem, repudiandae velit vero.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque est, facere illo iure perspiciatis quisquam voluptatum. Facilis fugit itaque natus necessitatibus quae quo ratione repellendus repudiandae sint sit? Necessitatibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque debitis delectus dolores doloribus ducimus excepturi, harum id in ipsa libero nisi non quas quia repellendus reprehenderit soluta totam veritatis.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius eligendi error expedita iste itaque iusto laboriosam natus nemo, sequi sint tempora veniam voluptatum? Ab non numquam qui quidem ratione!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut corporis, dignissimos ducimus ea eos esse fugiat incidunt ipsam laboriosam libero minus molestiae possimus quod reprehenderit rerum tenetur velit vitae.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloribus eaque incidunt minus quo, reiciendis sapiente. Asperiores, autem, consequuntur ea est fuga ipsam magni nulla odio perferendis perspiciatis, tenetur totam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis hic nemo sequi soluta? A ab eum id laboriosam, minus molestias omnis possimus soluta ut? Libero omnis quis quisquam repellat voluptatum?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae dolor dolore eos est explicabo facere illum labore laudantium, optio praesentium quam, quasi quos sequi totam. Eum ipsa ratione reprehenderit.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci consectetur cumque enim iusto nulla voluptatum? Iusto magni modi veniam! Cumque cupiditate harum laborum magnam minus quaerat, qui reiciendis!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi corporis dolorum earum error expedita facere harum, illum maxime molestiae numquam porro quam quis quos repudiandae, rerum sit temporibus voluptatem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolorem dolorum exercitationem fuga illo inventore ipsam iusto modi non numquam quos sed, voluptates. Consectetur dolor fugit iure sint voluptatibus. Ab.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error, hic molestiae nulla officia rerum sequi unde. Doloribus ipsa laudantium libero suscipit ullam velit. Accusantium cum eius nemo perferendis quo!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam dicta dolores ex fuga quae, quod tempora tempore. Accusantium atque consequatur ea fuga inventore laborum nostrum omnis, qui quibusdam sequi.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi consequatur distinctio dolorem et laborum minima nihil numquam odio officia perferendis porro reprehenderit saepe sapiente, sint, tenetur vitae voluptates, voluptatibus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur beatae libero minima necessitatibus quas, temporibus. Accusamus accusantium ad amet eveniet, exercitationem explicabo facilis fugit nam officia, reprehenderit sunt vel!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aut corporis, doloribus eaque, error exercitationem in ipsa laudantium libero necessitatibus neque nesciunt officia, officiis quibusdam repudiandae tempora temporibus vel.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis consequatur corporis cupiditate debitis eligendi eveniet ex facere fugiat magni porro quae recusandae reprehenderit sit soluta, suscipit ut veritatis voluptatem.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut commodi consequuntur culpa cum dicta ducimus eligendi eveniet inventore laboriosam minima nobis non numquam quisquam rem, repudiandae velit vero.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque est, facere illo iure perspiciatis quisquam voluptatum. Facilis fugit itaque natus necessitatibus quae quo ratione repellendus repudiandae sint sit? Necessitatibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque debitis delectus dolores doloribus ducimus excepturi, harum id in ipsa libero nisi non quas quia repellendus reprehenderit soluta totam veritatis.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius eligendi error expedita iste itaque iusto laboriosam natus nemo, sequi sint tempora veniam voluptatum? Ab non numquam qui quidem ratione!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut corporis, dignissimos ducimus ea eos esse fugiat incidunt ipsam laboriosam libero minus molestiae possimus quod reprehenderit rerum tenetur velit vitae.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloribus eaque incidunt minus quo, reiciendis sapiente. Asperiores, autem, consequuntur ea est fuga ipsam magni nulla odio perferendis perspiciatis, tenetur totam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis hic nemo sequi soluta? A ab eum id laboriosam, minus molestias omnis possimus soluta ut? Libero omnis quis quisquam repellat voluptatum?
-            </div>
-            <div class="mdl-cell mdl-cell--2-col">TAGS</div>
+<main class="mdl-layour__content">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col">
+            <h2>Posts</h2>
+            {{- range first 10 .Data.Pages }}
+                {{- if eq .Type "article"}}
+                    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                {{- end -}}
+            {{- end }}
         </div>
-    </main>
+        <div class="mdl-cell mdl-cell--8-col">
+            <article class="article">
+                {{ range where .Site.Pages "Type" "index" }}
+                    <h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
+                    {{ .Content }}
+                {{ end }}
+            </article>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col">TAGS</div>
 
-{{ partial "footer.html" . }}
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
+    </div>
+</main>
