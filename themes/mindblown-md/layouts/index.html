@@ -2,28 +2,30 @@
 
 {{ partial "navigation.html" . }}
 
-<main class="mdl-layour__content">
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--2-col">
-            <h2>Posts</h2>
-            {{- range .Data.Pages.ByDate -}}
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col">
+                <h2>Posts</h2>
+                {{- range .Data.Pages.ByDate -}}
                 {{- if eq .Type "article" }}
-                    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
                 {{- end -}}
-            {{- end -}}
-        </div>
-        <div class="mdl-cell mdl-cell--8-col">
-            <article class="article">
-                {{ range where .Site.Pages "Type" "index" }}
+                {{- end -}}
+            </div>
+            <div class="mdl-cell mdl-cell--8-col">
+                <article class="article">
+                    {{ range where .Site.Pages "Type" "index" }}
                     <h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
                     {{ .Content }}
-                {{ end }}
-            </article>
-        </div>
-        <div class="mdl-cell mdl-cell--2-col">TAGS</div>
+                    {{ end }}
+                </article>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col">TAGS</div>
 
-        <footer>
-            {{ partial "footer.html" . }}
-        </footer>
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        </div>
     </div>
 </main>
