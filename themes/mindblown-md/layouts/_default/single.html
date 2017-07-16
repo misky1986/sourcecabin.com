@@ -5,11 +5,7 @@
 <main class="mdl-layour__content">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--2-col">
-            <h2>Posts</h2>
-            {{- range .Data.Pages -}}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{- end -}}
-
+            {{ partial "sidemenu.html" . }}
         </div>
         <div class="mdl-cell mdl-cell--8-col">
             <article>

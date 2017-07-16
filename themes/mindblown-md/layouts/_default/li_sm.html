@@ -1,0 +1,10 @@
+<article class="lism">
+    <a href="{{ .Permalink }}">
+        <div class="thumb thumb-{{ .UniqueID }}"></div>
+        {{- if eq .Type "article" }}
+            <div class="inner">
+                <div class="title">{{ .Title }}</div>
+            </div>
+        {{ end }}
+    </a>
+</article>
