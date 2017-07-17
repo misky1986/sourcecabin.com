@@ -2,9 +2,11 @@
     <a href="{{ .Permalink }}">
         <div class="thumb thumb-{{ .UniqueID }}"></div>
         {{- if eq .Type "article" }}
-            <div class="inner">
-                <div class="title">{{ .Title }}</div>
-            </div>
+        <div class="inner">
+            <nav class="mdl-navigation">
+                <div class="mdl-navigation__link title" href="">{{ .Title }}</div>
+            </nav>
+        </div>
         {{ end }}
     </a>
 </article>

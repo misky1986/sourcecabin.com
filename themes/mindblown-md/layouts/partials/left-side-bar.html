@@ -1,0 +1,13 @@
+<aside class="left-sidebar">
+    <div class="sections sidebar">
+        <section class="sidebar">
+            <div>
+                <div class="articles sm">
+                    {{ range $i, $p := (first 10 .Site.Pages) }}
+                    {{ .Render "li_sm" }}
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+    </div>
+</aside>

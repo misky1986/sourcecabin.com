@@ -2,23 +2,27 @@
 
 {{ partial "navigation.html" . }}
 
-<main class="mdl-layour__content">
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--2-col">
-            {{ partial "sidemenu.html" . }}
-        </div>
-        <div class="mdl-cell mdl-cell--8-col">
-            <article>
-                <h1>{{ .Title }}</h1>
-                <h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
-                {{ .Content }}
-                adadasd
-            </article>
-        </div>
-        <div class="mdl-cell mdl-cell--2-col">TAGS</div>
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col">
+                {{ partial "left-side-bar.html" . }}
+            </div>
+            <div class="mdl-cell mdl-cell--8-col">
+                <article>
+                    <h1>{{ .Title }}</h1>
+                    <h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+                    {{ .Content }}
+                </article>
+            </div>
 
-        <footer>
-            {{ partial "footer.html" . }}
-        </footer>
+            <div class="mdl-cell mdl-cell--2-col">
+                {{ partial "right-side-bar.html" . }}
+            </div>
+
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        </div>
     </div>
 </main>
