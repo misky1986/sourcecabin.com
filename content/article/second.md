@@ -1,7 +1,7 @@
 +++
 date = "2017-06-14T22:12:11+02:00"
 title = "Second"
-type = "article"
+type = "blog_post"
 +++
 
 # Wee first header

@@ -1,7 +1,7 @@
 +++
 date = "2017-06-18T17:33:09+02:00"
 title = "Getting Started"
-type = "index"
+type = "blog_post"
 +++
 
 ## Installation

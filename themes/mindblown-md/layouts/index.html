@@ -3,26 +3,19 @@
 {{ partial "navigation.html" . }}
 
 <main class="mdl-layout__content">
-    <div class="page-content">
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col">
-                {{ partial "left-side-bar.html" . }}
-            </div>
-            <div class="mdl-cell mdl-cell--8-col">
-                <article class="article">
-                    {{ range where .Site.Pages "Type" "index" }}
-                    <h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
-                    {{ .Content }}
-                    {{ end }}
-                </article>
-            </div>
-            <div class="mdl-cell mdl-cell--2-col">
-                {{ partial "right-side-bar.html" . }}
-            </div>
-
-            <footer>
-                {{ partial "footer.html" . }}
-            </footer>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col">
+            {{ partial "left-side-bar.html" . }}
+        </div>
+        <div class="mdl-cell mdl-cell--8-col">
+            {{ partial "article_list.html" . }}
+        </div>
+        <div class="mdl-cell mdl-cell--2-col">
+            {{ partial "right-side-bar.html" . }}
         </div>
     </div>
 </main>
+
+{{ partial "footer.html" . }}
+
+{{ partial "head_end.html" . }}

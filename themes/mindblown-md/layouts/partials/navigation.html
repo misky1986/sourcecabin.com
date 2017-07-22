@@ -1,29 +1,16 @@
-<header class="mdl-layout__header mdl-layout__header--waterfall">
-    <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">
-            <a href="/" >Sourcecabin.com</a>
-        </span>
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
-                <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
-            </div>
-        </div>
+<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
-
-    <!-- Bottom row, will not be visible once scrolling -->
-    <div class="mdl-layout__header-row">
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
-            {{- range first 10 .Data.Pages -}}
-                {{- if eq .Type "page" }}
-                    <a class="m dl-navigation__link" href="{{ .Permalink }}">{{ .Title }}</a>
-                {{- end -}}
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Name &amp; Title</h3>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <nav class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        {{- range first 10 .Data.Pages -}}
+            {{- if eq .Type "page" }}
+                <a class="mdl-layout__tab is-active" href="{{ .Permalink }}">{{ .Title }}</a>
             {{- end -}}
-        </nav>
-    </div>
+        {{- end -}}
+    </nav>
 </header>
