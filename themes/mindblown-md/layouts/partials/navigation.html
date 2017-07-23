@@ -2,12 +2,12 @@
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        <h3>SourceCabin</h3>
+        <h3 id="brand-name"><a href="/">SourceCabin</a></h3>
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
     <nav class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        {{- range first 10 .Site.Pages -}}
+        {{- range first 10 .Site.RegularPages.ByTitle -}}
             {{- if eq .Type "page" }}
                 <a class="mdl-layout__tab" href="{{ .Permalink }}">{{ .Title }}</a>
             {{- end -}}
