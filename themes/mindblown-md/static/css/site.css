@@ -206,3 +206,10 @@ html, body {
 .mdl-demo .mdl-menu__container {
     z-index: 99;
 }
+
+/* CSS */
+
+a#brand-name {
+    text-decoration: none;
+    color: white;
+}
