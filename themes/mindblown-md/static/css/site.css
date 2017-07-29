@@ -213,3 +213,8 @@ a#brand-name {
     text-decoration: none;
     color: white;
 }
+
+.header-navigtion {
+    height: 192px;
+    background:linear-gradient(0deg,rgb(103,58,183),rgba(103,58,183, 0.3)),url("../images/alps.jpg");
+}
