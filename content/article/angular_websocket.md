@@ -1,7 +1,9 @@
 +++
 date = "2017-06-14T22:12:06+02:00"
-title = "First"
+title = "Angular Websocket"
 type = "blog_post"
+tags = [ "angular", "websocket" ]
+categories = [ "developing", "frontend" ]
 +++
 
 # Wee first header

@@ -2,6 +2,8 @@
 date = "2017-06-14T22:12:11+02:00"
 title = "Second"
 type = "blog_post"
+tags = [ "go", "hugo", "creating post" ]
+categories = [ "developing", "frontend" ]
 +++
 
 # Wee first header
@@ -164,7 +166,7 @@ Color names can be written upper- or lowercase but must match the names of the
 material design [color palette](http://www.materialui.co/colors). Valid values are: _red_, _pink_, _purple_, _deep purple_, _indigo_, _blue_, _light-blue_, _cyan_, _teal_, _green_, _light-green_,
 _lime_, _yellow_, _amber_, _orange_, _deep-orange_, _brown_, _grey_ and
 _blue-grey_. The last three colors can only be used as a primary color.
-
+2
 If the color is set via this configuration, an additional CSS file called
 `palettes.css` is included that defines the color palettes.
 

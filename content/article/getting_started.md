@@ -2,6 +2,8 @@
 date = "2017-06-18T17:33:09+02:00"
 title = "Getting Started"
 type = "blog_post"
+tags = [ "go", "hugo", "theme" ]
+categories = [ "developing", "frontend" ]
 +++
 
 ## Installation
