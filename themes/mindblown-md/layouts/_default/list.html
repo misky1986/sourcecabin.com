@@ -2,9 +2,19 @@
 
 {{ partial "navigation.html" . }}
 
-
-{{- range first 10 .Data.Pages }}
-    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-{{- end }}
+<main class="mdl-layout__content">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col">
+        </div>
+        <div class="mdl-cell mdl-cell--8-col">
+            {{ partial "article_list.html" . }}
+        </div>
+        <div class="mdl-cell mdl-cell--2-col">
+            {{ partial "right-side-bar.html" . }}
+        </div>
+    </div>
+</main>
 
 {{ partial "footer.html" . }}
+
+{{ partial "head_end.html" . }}
