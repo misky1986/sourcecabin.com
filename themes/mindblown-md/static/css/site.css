@@ -218,3 +218,14 @@ a#brand-name {
     height: 192px;
     background:linear-gradient(0deg,rgb(103,58,183),rgba(103,58,183, 0.3)),url("../images/alps.jpg");
 }
+
+.material-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+span.text {
+    vertical-align: bottom;
+}
