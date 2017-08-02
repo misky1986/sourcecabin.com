@@ -229,3 +229,11 @@ a#brand-name {
 span.text {
     vertical-align: bottom;
 }
+
+.paginate-prev {
+    text-align: center;
+}
+
+.paginate-next {
+    text-align: center;
+}
