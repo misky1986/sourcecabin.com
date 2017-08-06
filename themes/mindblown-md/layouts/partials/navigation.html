@@ -1,4 +1,4 @@
-<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+<header class="mdl-layout__header mdl-layout__header--fixed mdl-color--primary">
     <div class="mdl-layout--large-screen-only mdl-layout__header-row header-navigtion">
         <h3><a href="/" id="brand-name">SourceCabin</a></h3>
     </div>
@@ -8,5 +8,16 @@
                 <a class="mdl-layout__tab" href="{{ .Permalink }}">{{ .Title }}</a>
             {{- end -}}
         {{- end -}}
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="waterfall-exp">
+                <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="waterfall-exp">
+            </div>
+        </div>
     </nav>
 </header>
