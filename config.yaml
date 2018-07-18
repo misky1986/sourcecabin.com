@@ -1,5 +1,5 @@
 ---
 theme: "mindblown-md"
-baseURL: "http://example.org/"
+baseURL: "localhost"
 languageCode: "en-us"
 title: "SourceCabin.com"
